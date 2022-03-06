@@ -9,7 +9,8 @@
   },
   "scripts": {
     "export": "npx resume export --format pdf --theme . resume.pdf",
-    "serve": "npx resume serve --theme ."
+    "serve": "npx resume serve --theme .",
+    "touch": "touch resume.json"
   },
   "license": "MIT",
   "dependencies": {
