@@ -10,5 +10,11 @@
   "license": "MIT",
   "dependencies": {
     "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "resume-cli": "^3.0.6"
+  },
+  "overrides": {
+    "puppeteer": "^13.4.0"
   }
 }
