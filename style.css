@@ -1,54 +1,58 @@
 body {
-	background: #fff;
-	font: 15px Arial, Helvetica, sans-serif;
-	line-height: 1.4;
-	margin: 50px 0;
-	margin-bottom: 100px;
+  background: #fff;
+  font: 15px Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  margin: 50px 0;
+  margin-bottom: 100px;
 }
 em {
-	color: #999;
+  color: #999;
 }
 p {
-	line-height: 1.4;
+  line-height: 1.4;
 }
 ul {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 section {
-	margin-bottom: 2em;
+  margin-bottom: 2em;
 }
 blockquote {
-	margin: 0;
-	margin-bottom: 1em;
+  margin: 0;
+  margin-bottom: 1em;
 }
 .item {
-	margin-bottom: 1em;
+  margin-bottom: 1em;
 }
 #resume {
-	margin: 0 auto;
-	max-width: 480px;
-	padding: 0 20px;
+  margin: 0 auto;
+  max-width: 760px;
+  padding: 0 20px;
+}
+#skills {
+  overflow: hidden;
+}
+#skills .item {
+  float: left;
+  width: 50%;
 }
 #basics {
-	margin-bottom: -10px;
+  display: flex;
+  flex-flow: row wrap;
 }
-#basics h3 {
-	margin-top: 1.5em;
+.alignleft,
+.aligncenter,
+.alignright {
+  width: 33.33333%;
+  display: flex;
+  align-items: center;
 }
-#basics .contact strong,
-#location strong {
-	clear: both;
-	float: left;
-	line-height: 1.3;
-	width: 120px;
+.alignleft {
+  text-align: left;
 }
-#profiles,
-#skills {
-	overflow: hidden;
+.aligncenter {
+  text-align: center;
 }
-#profiles .item,
-#skills .item {
-	float: left;
-	width: 50%;
+.alignright {
+  text-align: right;
 }
-
