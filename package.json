@@ -7,6 +7,10 @@
     "type": "git",
     "url": "https://github.com/rwardle/jsonresume-theme-boilerplate"
   },
+  "scripts": {
+    "export": "npx resume export --format pdf --theme . resume.pdf",
+    "serve": "npx resume serve --theme ."
+  },
   "license": "MIT",
   "dependencies": {
     "handlebars": "^4.7.7"
