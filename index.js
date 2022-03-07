@@ -31,6 +31,16 @@ Handlebars.registerHelper("date", function (date) {
   return months[theDate.getMonth()] + " " + theDate.getFullYear();
 });
 
+Handlebars.registerHelper("removeProtocol", function (url) {
+  var regex = /^.+:\/\/(.*)/i; // ignore case
+  var match = url.match(regex);
+  if (match && match[1]) {
+    return match[1].replace(/^[\/]+|[\/]+$/g, '');
+  } else {
+    return url;
+  }
+});
+
 module.exports = {
   render: render,
 };

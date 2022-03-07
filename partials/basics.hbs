@@ -23,7 +23,7 @@
         <div>
           {{#each profiles}}
             <div class="url">
-              <a href="{{url}}" target="_blank">{{url}}</a>
+              <a href="{{url}}" target="_blank">{{removeProtocol url}}</a>
             </div>
           {{/each}}
         </div>
