@@ -16,17 +16,15 @@ ul {
 }
 a {
   color: #000;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 section {
   margin-bottom: 2em;
 }
-blockquote {
-  margin: 0;
-  margin-bottom: 1em;
-}
-.item {
-  margin-bottom: 1em;
-}
+
 #resume {
   margin: 0 auto;
   max-width: 760px;
@@ -35,22 +33,6 @@ blockquote {
 #basics {
   display: flex;
   flex-flow: row wrap;
-}
-.alignleft,
-.aligncenter,
-.alignright {
-  width: 33.33333%;
-  display: flex;
-  align-items: center;
-}
-.alignleft {
-  text-align: left;
-}
-.aligncenter {
-  text-align: center;
-}
-.alignright {
-  text-align: right;
 }
 #skills .item {
   display: flex;
@@ -61,6 +43,32 @@ blockquote {
 }
 #skills .item .keywords {
   width: 80%;
+}
+#work .header {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  margin-bottom: 1em;
+}
+.text-left,
+.text-center,
+.text-right {
+  width: 33.33333%;
+}
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.align-center {
+  display: flex;
+  align-items: center;
 }
 .title {
   display: flex;

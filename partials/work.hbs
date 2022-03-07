@@ -1,35 +1,55 @@
 {{#if resume.work.length}}
 <section id="work">
-	<h2>Work</h2>
+	<div class="title">
+		<h2 class="title-text">Work</h2>
+		<div class="title-divider"></div>
+	</div>
+
 	{{#each resume.work}}
 	<div class="item">
-		{{#if company}}
-		<h3 class="name">
-			{{company}}
-		</h3>
-		{{/if}}
-		<div class="date">
-			{{#if startDate}}
-			<span class="startDate">
-				{{startDate}}
-			</span>
-			{{/if}}
-			{{#if endDate}}
-			<span class="endDate">
-				- {{endDate}}
-			</span>
-			{{else}}
-			<span class="endDate">
-				- Present
-			</span>
-			{{/if}}
+		<div class="header">
+			<div class="text-left">
+				{{#if position}}
+				<strong class="position">
+					{{position}}
+				</strong>
+				{{/if}}
+			</div>
+			<div class="text-center">
+				{{#if company}}
+				<strong class="name">
+					{{#if url}}
+					<a href="{{url}}" target="_blank">{{company}}</a>
+					{{else}}
+					{{company}}
+					{{/if}}
+				</strong>
+				{{/if}}
+			</div>
+			<div class="text-right">
+				<strong class="date">
+					{{#if startDate}}
+					<span class="startDate">
+						{{date startDate}}
+					</span>
+					{{/if}}
+					{{#if endDate}}
+					<span class="endDate">
+						- {{date endDate}}
+					</span>
+					{{else}}
+					<span class="endDate">
+						- Present
+					</span>
+					{{/if}}
+				</strong>
+			</div>
 		</div>
-		{{#if position}}
-		<div class="position">
-			{{position}}
-		</div>
-		{{/if}}
-		{{#if website}}
+
+
+
+
+		{{#if url}}
 		<div class="website">
 			<a href="{{website}}">{{website}}</a>
 		</div>
