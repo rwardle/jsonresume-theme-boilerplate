@@ -32,13 +32,6 @@ blockquote {
   max-width: 760px;
   padding: 0 20px;
 }
-#skills {
-  overflow: hidden;
-}
-#skills .item {
-  float: left;
-  width: 50%;
-}
 #basics {
   display: flex;
   flex-flow: row wrap;
@@ -58,4 +51,29 @@ blockquote {
 }
 .alignright {
   text-align: right;
+}
+#skills .item {
+  display: flex;
+  flex-direction: row;
+}
+#skills .item .name {
+  width: 20%;
+}
+#skills .item .keywords {
+  width: 80%;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.title-text {
+  flex-grow: 0;
+  color: #00f;
+}
+.title-divider {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #00f;
+  margin-left: 0.5em;
 }

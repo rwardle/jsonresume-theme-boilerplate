@@ -1,24 +1,23 @@
 {{#if resume.skills.length}}
 <section id="skills">
-	<h2>Skills</h2>
+	<div class="title">
+		<h2 class="title-text">Skills</h2>
+		<div class="title-divider"></div>
+	</div>
+	
 	{{#each resume.skills}}
 	<div class="item">
 		{{#if name}}
 		<div class="name">
-			{{name}}
-		</div>
-		{{/if}}
-		{{#if level}}
-		<div class="level">
-			<em>{{level}}</em>
+			<strong>{{name}}</strong>
 		</div>
 		{{/if}}
 		{{#if keywords.length}}
-		<ul class="keywords">
+		<div class="keywords">
 			{{#each keywords}}
-			<li>{{.}}</li>
+			{{.}}{{#if @last}}{{else}},{{/if}}
 			{{/each}}
-		</ul>
+		</div>
 		{{/if}}
 	</div>
 	{{/each}}
