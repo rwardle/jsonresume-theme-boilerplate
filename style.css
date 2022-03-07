@@ -33,16 +33,23 @@ section {
 #basics {
   display: flex;
   flex-flow: row wrap;
+  margin-bottom: 1em;
 }
-#skills .item {
+#skills .item, #education .item {
   display: flex;
   flex-direction: row;
 }
-#skills .item .name {
-  width: 20%;
+#skills .name {
+  width: 15%;
 }
-#skills .item .keywords {
-  width: 80%;
+#skills .keywords {
+  width: 85%;
+}
+#education .course {
+  width: 50%;
+}
+#education .institution {
+  width: 50%;
 }
 #work .header {
   display: flex;
