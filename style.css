@@ -33,7 +33,6 @@ a {
 #basics {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 1em;
 }
 #skills .item, #education .item {
   display: flex;
