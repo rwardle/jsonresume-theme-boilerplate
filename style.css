@@ -40,16 +40,16 @@ a {
   flex-direction: row;
 }
 #skills .name {
-  width: 15%;
+  width: 17%;
 }
 #skills .keywords {
-  width: 85%;
+  width: 83%;
 }
 #education .course {
-  width: 50%;
+  width: 53%;
 }
 #education .institution {
-  width: 50%;
+  width: 47%;
 }
 #work .header {
   display: flex;
