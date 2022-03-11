@@ -8,7 +8,7 @@ body {
   font: 15px Arial, Helvetica, sans-serif;
   line-height: 1.4;
   margin-top: 25px;
-  margin-bottom: 100px;
+  margin-bottom: 25px;
 }
 em {
   color: #999;
@@ -19,7 +19,7 @@ p {
 }
 ul {
   margin-top: 0;
-  margin-bottom: 1.5em;
+  margin-bottom: 0;
 }
 a {
   color: #000;
@@ -55,7 +55,10 @@ a {
   flex-direction: row;
 }
 #work .item {
-  break-inside: avoid;
+  break-inside: avoid; 
+}
+#work .item:not(:last-child) {
+  margin-bottom: 1.5em;
 }
 
 .item {
