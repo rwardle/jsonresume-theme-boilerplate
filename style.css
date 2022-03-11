@@ -61,19 +61,17 @@ a {
 .item {
   margin-bottom: 0.5em;
 }
-.text-left,
-.text-center,
-.text-right {
-  width: 33.33333%;
-}
 .text-left {
   text-align: left;
+  width: 30%;
 }
 .text-center {
   text-align: center;
+  width: 40%;
 }
 .text-right {
   text-align: right;
+  width: 30%;
 }
 .align-center {
   display: flex;
