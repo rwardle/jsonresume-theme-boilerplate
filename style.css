@@ -34,7 +34,7 @@ a {
   display: flex;
   flex-flow: row wrap;
 }
-#skills .item, #education .item {
+#skills .item, #education .item, #certificates .item {
   display: flex;
   flex-direction: row;
 }
@@ -43,12 +43,6 @@ a {
 }
 #skills .keywords {
   width: 83%;
-}
-#education .course {
-  width: 53%;
-}
-#education .institution {
-  width: 47%;
 }
 #work .header {
   display: flex;
@@ -59,6 +53,12 @@ a {
 }
 #work .item:not(:last-child) {
   margin-bottom: 1.5em;
+}
+#education .course, #certificates .name {
+  width: 55%;
+}
+#education .institution, #certificates .issuer {
+  width: 45%;
 }
 
 .item {
