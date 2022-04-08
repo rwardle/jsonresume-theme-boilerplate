@@ -1,4 +1,4 @@
-@page{
+@page {
   size: A4;
   margin: 10mm;
 }
@@ -10,17 +10,21 @@ body {
   margin-top: 25px;
   margin-bottom: 25px;
 }
+
 em {
   color: #999;
 }
+
 p {
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
+
 ul {
   margin-top: 0;
   margin-bottom: 0;
 }
+
 a {
   color: #000;
 }
@@ -30,68 +34,89 @@ a {
   max-width: 670px;
   padding: 0 20px;
 }
+
 #basics {
   display: flex;
   flex-flow: row wrap;
 }
-#skills .item, #education .item, #certificates .item {
+
+#skills .item,
+#education .item,
+#certificates .item {
   display: flex;
   flex-direction: row;
 }
+
 #skills .name {
   width: 17%;
 }
+
 #skills .keywords {
   width: 83%;
 }
+
 #work .header {
   display: flex;
   flex-direction: row;
 }
+
 #work .item {
-  break-inside: avoid; 
+  break-inside: avoid;
 }
+
 #work .item:not(:last-child) {
   margin-bottom: 1.5em;
 }
-#education .course, #certificates .name {
+
+#education .course,
+#certificates .name {
   width: 55%;
 }
-#education .institution, #certificates .issuer {
+
+#education .institution,
+#certificates .issuer {
   width: 45%;
 }
 
 .item {
   margin-bottom: 0.5em;
 }
+
 .text-left {
   text-align: left;
   width: 30%;
 }
+
 .text-center {
   text-align: center;
   width: 40%;
 }
+
 .text-right {
   text-align: right;
   width: 30%;
 }
+
 .align-center {
   display: flex;
   align-items: center;
 }
+
 .align-center > * {
   flex-grow: 1;
 }
+
 .title {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
+
 .title-text {
   flex-grow: 0;
   color: #00f;
 }
+
 .title-divider {
   flex-grow: 1;
   height: 1px;
